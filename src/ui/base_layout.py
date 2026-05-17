@@ -41,11 +41,13 @@ def style_base_layout():
                 padding-top:1.5rem !important; 
             }
 
+            }
             h1 {
                 font-family: 'Climate Crisis', sans-serif !important;
                 font-size: 3.5rem !important;
                 line-height:1.1 1important;
                 margin-bottom:0rem !important;
+                color: black !important;
             }
                 
 
@@ -54,12 +56,42 @@ def style_base_layout():
                 font-size: 2rem !important;
                 line-height:0.9 !important;
                 margin-bottom:0rem !important;
+                color: black !important;
             }
                 
             h3, h4, p {
-                font-family: 'Outfit', sans-serif;    
+                font-family: 'Outfit', sans-serif; 
+                color: black !important;   
             }
                 
+            /* Text input */
+            .stTextInput input {
+                color: black !important;
+                background-color: white !important;
+                border: 1px solid black !important;
+            }
+
+            /* Placeholder text */
+            .stTextInput input::placeholder {
+                color: #555 !important;
+            }
+
+            /* Dataframe text */
+            [data-testid="stDataFrame"] {
+                color: black !important;
+                background-color: white !important;
+            }
+
+            /* Dataframe cells */
+            [data-testid="stDataFrame"] div {
+                color: black !important;
+            }
+
+            /* Table headers */
+            thead tr th {
+                color: black !important;
+                background-color: #f5f5f5 !important;
+            }
 
             button{
                 border-radius: 1.5rem !important;
